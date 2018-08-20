@@ -33,8 +33,8 @@ public class FoodTruckRepoImpl implements FoodTruckRepo {
 			while ((line = rd.readLine()) != null) {
 				result.append(line);
 			}
+			conn.disconnect();
 			rd.close();
-
 			jsonString = result.toString();
 
 		} catch (Exception e) {
@@ -59,7 +59,7 @@ public class FoodTruckRepoImpl implements FoodTruckRepo {
 		
 		return trucks;
 	}
-	
+
 	public List<FoodTruck> getFoodTrucksByDayOfWeek(int dayOfWeek) {
 		
 		String dayOfWeekStr = getDayOfWeek(dayOfWeek);
@@ -67,7 +67,7 @@ public class FoodTruckRepoImpl implements FoodTruckRepo {
 		List<FoodTruck> foodTrucks = getAllFoodTrucks();
 		
 		// Get food trucks that open today
-		List<FoodTruck> todaysFoodTrucks = foodTrucks.stream().filter(foodTruck -> foodTruck.getDayofweekstr().equals(dayOfWeekStr)).collect(Collectors.toList());
+		List<FoodTruck> todaysFoodTrucks = foodTrucks.stream().filter(foodTruck -> foodTruck.getDayofweekstr().equalsIgnoreCase(dayOfWeekStr)).collect(Collectors.toList());
 		
 		// Sort food trucks by name
 		if (todaysFoodTrucks != null && todaysFoodTrucks.size() != 0) {
