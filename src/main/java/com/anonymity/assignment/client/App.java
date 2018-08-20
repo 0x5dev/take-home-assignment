@@ -1,4 +1,4 @@
-package com.duke.assignment;
+package com.anonymity.assignment.client;
 
 import java.util.Calendar;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.duke.assignment.dao.FoodTruckRepo;
-import com.duke.assignment.model.FoodTruck;
+import com.anonymity.assignment.dao.FoodTruckRepo;
+import com.anonymity.assignment.model.FoodTruck;
 
 public class App {
 	

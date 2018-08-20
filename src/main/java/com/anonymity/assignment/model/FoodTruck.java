@@ -1,4 +1,4 @@
-package com.duke.assignment.model;
+package com.anonymity.assignment.model;
 
 public class FoodTruck {
 	private String applicant;

@@ -1,9 +1,9 @@
-package com.duke.assignment;
+package com.anonymity.assignment.client;
 
 import java.util.List;
 import java.util.Scanner;
 
-import com.duke.assignment.model.FoodTruck;
+import com.anonymity.assignment.model.FoodTruck;
 
 public class FoodTruckPrinterImpl implements FoodTruckPrinter {
 

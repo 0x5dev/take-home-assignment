@@ -1,8 +1,8 @@
-package com.duke.assignment.dao;
+package com.anonymity.assignment.dao;
 
 import java.util.List;
 
-import com.duke.assignment.model.FoodTruck;
+import com.anonymity.assignment.model.FoodTruck;
 
 public interface FoodTruckRepo {
 

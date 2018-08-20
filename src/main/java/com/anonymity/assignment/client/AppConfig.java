@@ -1,8 +1,8 @@
-package com.duke.assignment;
+package com.anonymity.assignment.client;
 import org.springframework.context.annotation.*;
 
-import com.duke.assignment.dao.FoodTruckRepo;
-import com.duke.assignment.dao.FoodTruckRepoImpl;
+import com.anonymity.assignment.dao.FoodTruckRepo;
+import com.anonymity.assignment.dao.FoodTruckRepoImpl;
 
 @Configuration
 public class AppConfig {

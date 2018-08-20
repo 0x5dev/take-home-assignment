@@ -1,4 +1,4 @@
-package com.duke.assignment.dao;
+package com.anonymity.assignment.dao;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.duke.assignment.model.FoodTruck;
+import com.anonymity.assignment.model.FoodTruck;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
